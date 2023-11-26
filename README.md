@@ -11,3 +11,17 @@ __PEQUEÑA EXPLICACIÓN__: Siempre que utilizo inteligencias artificiales tengo 
 4. Para los nombres y descripciones de los panes __CharGPT__ con el prompt: _"Dame 8 descripciones de panes, con sus nombres y de diferentes tipos con una extension maxima de 4 lineas"_
 
 ## Capturas de pantalla.
+
+_Para hacer funcionar el comando gulp, hay que hacer un npm install (npm i) y ya después lanzar el comando gulp, para que se comprima el css y se suba a github_
+
+Las 3 primeras instrucciones funcionan correctamente.
+
+1. Primero borramos los archivos de la carpeta css, para evitar posibles fallos.
+
+2. Despues compilamos los archivos sass en la carpeta css que estará vacía.
+
+3. Comprimimos el css para que quede sin espacios
+
+4. __Este paso da error en la captura__, creo que es porque el repositorio estaba ya creado y lo he clonado posteriormente, entonces sale como si no tuviese los permisos, bastaría con llevar todo el proyecto a una carpeta nueva y ahi lanzar ```npm i``` y luego lanzar el comando ```gulp```
+
+![Comando GULP](image.png)
