@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/todo.css">
+    <script defer src="./script/funciones.js"></script>
+    <title>Migas Amigas</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="imgPrincipal" src="../src/img/logo.png"></a>
+        <a href="index.html"><h1 class="slogan">MAESTROS ARTESANOS</h1></a>
+        <nav>
+            <ul>
+                <li><a href="panaderia.html">Panaderia</a></li>
+                <li><a href="empanaderia.html">Empanada</a></li>
+            </ul>
+        </nav>
+        <button class="idioma">🇪🇦/🇵🇹</button>
+    <div class="usuario">
+        
+        <img src="../src/img/user.png">
+        <img src="../src/img/carrito.png">
+    </div>
+    </header>
+    <div class="contenidoHistoria">
+        <video class="v1" width="640" height="360" autoplay loop src="../src/videos/video3.mp4">
+        </video>
+        <p class="t1">Enclavada en la pintoresca frontera entre España y Portugal, la panadería <strong>Migas Amigas</strong> es un verdadero tesoro de la tradición culinaria. Fundada hace generaciones por la apasionada familia Rodríguez, esta panadería ha sido un faro de sabor y calidad desde sus humildes comienzos.
+        La historia de <strong>Migas Amigas</strong>  se remonta al siglo XIX, cuando el bisabuelo de la familia, Don Manuel Rodríguez, comenzó a hornear pan en un pequeño horno de leña. A lo largo de los años, la pasión y el conocimiento se transmitieron de generación en generación, perfeccionando las recetas familiares y añadiendo nuevos sabores a la oferta de la panadería.
+        </p>
+        <p class="t2">
+        Hoy en día, bajo la dirección de Carlos Rodríguez, la cuarta generación al mando, <strong>Migas Amigas</strong> ha mantenido viva la esencia de la panadería tradicional. Con sus hornos de piedra y sus ingredientes cuidadosamente seleccionados, la panadería sigue ofreciendo pan recién horneado y empanadas que son adorados tanto por la comunidad local como por visitantes de todo el mundo.
+        La panadería es un verdadero puente culinario entre dos naciones, fusionando las influencias gastronómicas de España y Portugal en cada mordisco. Desde el clásico pan artesanal hasta las delicias regionales, cada producto de <strong>Migas Amigas</strong> cuenta una historia de amor por la panadería y un compromiso inquebrantable con la calidad.
+        </p>
+        <video class="v2" width="640" height="360" autoplay loop src="../src/videos/video2.mp4">
+        </video>
+
+    </div>
+    <footer>
+        <div class="media">
+            <div class="rrss"><a href="https://maps.app.goo.gl/RaXZa2hbHCWVUDe77" target="_blank"><img src="../src/img/ubi.png"></a></div>
+            <div class="rrss"><a href="https://www.instagram.com/panadario/?hl=es" target="_blank"><img src="../src/img/instaLogo.png"></a></div>
+        </div>
+        <p >
+            <button id="contactoDialog">CONTACTO</button>
+        </p>
+    </footer>
+    <dialog id="contacto">
+        
+        <h2>CONTACTO</h2>
+            <!--- NOMBRE EMAIL Y TEXTAREA-->
+    <form>
+        
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" placeholder="Nombre">
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Email">
+        <label for="message">¿En que podemos ayudarte?: </label>
+        <textarea name="message" placeholder="Mensaje"></textarea>
+        <button onclick="salir()">ENVIAR</button>
+        <button class="flechaBack" onclick="salir()">x</button>
+    </form>
+    </dialog>
+</body>
+</html>

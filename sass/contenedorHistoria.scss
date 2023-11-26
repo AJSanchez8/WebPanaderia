@@ -1,0 +1,81 @@
+@import "_variables.scss";
+@import "mixings.scss";
+
+.contenidoHistoria {
+    margin: 0px auto;
+    padding: 20px;
+    background-color: $colorSecundario;
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 400px 600px;
+    gap: 40px;
+    grid-template-areas:
+        "video1 texto1"
+        "texto2 video2";
+    
+    @media (max-width: 1700px) {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "video1"
+            "texto1"
+            "video2"
+            "texto2";
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.v1 {
+    margin: 0px auto;
+    margin-top: 70px;
+    border-radius: 15px;
+    grid-area: video1;
+    @include videosResponsivos;
+    @include videosResponsivosPeque;
+}
+
+
+.t1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 10px;
+    padding: $paddinCentro;
+    text-decoration: none;
+    font-size: large;
+    color: $colorHeaderFooter;
+    font-weight: bolder;
+    grid-area: texto1;
+    
+}
+
+.v2 {
+    margin-top: 0px auto;
+    border-radius: 15px;
+    object-fit: contain;
+    grid-area: video2;
+    @include videosResponsivos;
+    @include videosResponsivosPeque;
+
+}
+
+.t2 {
+    padding: $paddinCentro;
+    text-align: center;
+    margin-top:150px ;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: large;
+    color: $colorHeaderFooter;
+    font-weight: bolder;
+    grid-area: texto2;
+}
+video{
+    object-fit: contain;
+}
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "WebPanaderia",
+  "version": "1.0.0",
+  "description": "Panaderia con gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJSanchez8/WebPanaderia.git"
+  },
+  "author": "AJ Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJSanchez8/WebPanaderia/issues"
+  },
+  "homepage": "https://github.com/AJSanchez8/WebPanaderia/issues#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-git": "^2.10.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "simple-git": "^3.21.0"
+  },
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

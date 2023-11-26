@@ -1,0 +1,373 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  background-color: #090909;
+  color: white;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+header a {
+  text-decoration: none;
+}
+header .imgPrincipal {
+  margin-left: 0px;
+  width: 120px;
+  height: 120px;
+}
+header .slogan {
+  color: #BBB36E;
+  align-items: center;
+  font-size: 35px;
+  margin-left: 0px;
+  margin-right: 25px;
+}
+header ul {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 30px;
+}
+header ul li {
+  display: inline;
+  list-style-type: none;
+}
+header ul li a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: large;
+  color: #BBB36E;
+  font-weight: bolder;
+}
+header .idioma {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #090909;
+  box-shadow: 3px 3px 3px 0px rgba(253, 252, 252, 0.2);
+  color: #BBB36E;
+  font-size: medium;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+header img {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 1300px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  header .slogan {
+    margin: 10px 0;
+  }
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: #090909;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+  color: #BBB36E;
+}
+footer a {
+  text-decoration: none;
+}
+footer #contactoDialog {
+  cursor: pointer;
+  background-color: #090909;
+  color: #BBB36E;
+  font-size: large;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+}
+footer #contactoDialog:hover {
+  transition: 300ms;
+  scale: 1.5;
+}
+
+.media {
+  display: flex;
+  height: 95px;
+  margin-left: 30px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+}
+
+.rrss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  background-color: #BBB36E;
+  margin: 25px;
+  text-align: center;
+  padding: 0px auto;
+}
+.rrss a img {
+  width: 55px;
+  height: 55px;
+}
+
+a:visited {
+  color: #BBB36E;
+}
+
+.contenidoHistoria {
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #BBB36E;
+  height: 100%;
+  width: 80%;
+  left: 10%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 400px 600px;
+  gap: 40px;
+  grid-template-areas: "video1 texto1" "texto2 video2";
+}
+@media (max-width: 1700px) {
+  .contenidoHistoria {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "video1" "texto1" "video2" "texto2";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.v1 {
+  margin: 0px auto;
+  margin-top: 70px;
+  border-radius: 15px;
+  grid-area: video1;
+}
+@media (max-width: 768px) {
+  .v1 {
+    width: 450px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 528px) {
+  .v1 {
+    width: 300px;
+    border-radius: 15px;
+  }
+}
+
+.t1 {
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 10px;
+  padding: 0 55px;
+  text-decoration: none;
+  font-size: large;
+  color: #090909;
+  font-weight: bolder;
+  grid-area: texto1;
+}
+
+.v2 {
+  margin-top: 0px auto;
+  border-radius: 15px;
+  object-fit: contain;
+  grid-area: video2;
+}
+@media (max-width: 768px) {
+  .v2 {
+    width: 450px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 528px) {
+  .v2 {
+    width: 300px;
+    border-radius: 15px;
+  }
+}
+
+.t2 {
+  padding: 0 55px;
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: large;
+  color: #090909;
+  font-weight: bolder;
+  grid-area: texto2;
+}
+
+video {
+  object-fit: contain;
+}
+
+.contenidoPan {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin: 0px auto;
+  padding: 20px;
+  gap: 30px;
+  background-color: #BBB36E;
+  width: 80%;
+  left: 10%;
+  justify-content: center;
+}
+@media (max-width: 1080px) {
+  .contenidoPan {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+
+.articulo {
+  display: grid;
+  margin: 10px;
+  height: 250px;
+}
+.articulo .articulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 10px;
+  height: 150px;
+}
+.articulo img {
+  grid-column: 1/3;
+  grid-row: 2/5;
+  width: 222px;
+  height: 222px;
+  margin: 15px;
+  background-color: #090909;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 0px rgba(9, 9, 9, 0.8);
+  opacity: 0.8;
+}
+.articulo img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px 0px rgba(9, 9, 9, 0.8);
+  transition: 300ms;
+  opacity: 1;
+}
+.articulo h2 {
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin: 0;
+}
+.articulo p {
+  grid-column: 3/4;
+  grid-row: 2/4;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: large;
+  font-weight: bolder;
+}
+.articulo button {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  width: 100PX;
+  background-color: #090909;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 15px;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 6px;
+  justify-self: end;
+}
+.articulo button:hover {
+  transition: 300ms;
+  box-shadow: 2px 2px 2px 0px rgba(9, 9, 9, 0.3);
+}
+
+dialog {
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-radius: 5px;
+}
+dialog button {
+  margin: 10px auto;
+  margin-top: 10px;
+  width: 18%;
+  text-align: center;
+}
+dialog .flechaBack {
+  padding: 1px;
+  background-color: #BBB36E;
+  color: white;
+  position: absolute;
+  top: -12px;
+  right: 0px;
+  font-size: large;
+  width: 30px;
+}
+dialog h2 {
+  background-color: #090909;
+  color: #BBB36E;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  color: #BBB36E;
+}
+
+input {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #BBB36E;
+}
+
+textarea {
+  margin: 0 auto;
+  width: 50%;
+  height: 100px;
+  background-color: #BBB36E;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/img/fondoPrueba6.jpg");
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

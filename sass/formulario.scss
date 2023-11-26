@@ -1,0 +1,52 @@
+@import '_variables.scss';
+dialog{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: 5px;
+    button{
+        margin: 10px auto;
+        margin-top: 10px;
+        width: 18%;
+        text-align: center;
+    }
+    .flechaBack{
+        padding: 1px;
+        background-color: $colorSecundario;
+        color: white;
+        position: absolute;
+        top: -12px;
+        right: 0px;
+        font-size:large;
+        width: 30px;
+    }
+    h2{
+        background-color: $colorHeaderFooter;
+        color: $colorSecundario;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin : 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: $colorSecundario;
+}
+input{
+    margin: 0 auto;
+    width: 50%;
+    background-color: $colorSecundario;
+}
+textarea{
+    margin: 0 auto;
+    width: 50%;
+    height: 100px;
+    background-color: $colorSecundario;
+}
+
+

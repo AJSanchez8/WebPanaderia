@@ -1,0 +1,25 @@
+
+@mixin margPadBorder{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin fondo{
+    background-image: url('../src/img/fondoPrueba6.jpg');
+    background-size:cover;
+}
+
+@mixin videosResponsivos {
+    @media (max-width: 768px) {
+      width: 450px;
+      border-radius: 15px;
+    }
+  }
+
+@mixin videosResponsivosPeque {
+    @media (max-width: 528px) {
+        width: 300px;
+        border-radius: 15px;
+    }      
+}

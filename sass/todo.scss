@@ -1,0 +1,15 @@
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "contenedorHistoria.scss";
+@import "contenidoArticulosVenta.scss";
+@import "formulario.scss";
+@import "mixings.scss";
+
+*{
+    @include margPadBorder;
+}
+body {
+    @include fondo;
+}
+

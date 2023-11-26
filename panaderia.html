@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/todo.css">
+    <title>Migas Amigas</title>
+    <script defer src="./script/funciones.js"></script></head>
+<body>
+    <header>
+        <a href="index.html"><img class="imgPrincipal" src="./src/img/logo.png"></a>
+        <a href="index.html"><h1 class="slogan">MAESTROS ARTESANOS</h1></a>
+        <nav>
+            <ul>
+                <li><a href="panaderia.html">Panaderia</a></li>
+                <li><a href="empanaderia.html">Empanada</a></li>
+            </ul>
+        </nav>
+        <button class="idioma">🇪🇦/🇵🇹</button>
+    <div class="usuario">
+        <img src="./src/img/user.png" >
+        <img id="carrito" src="./src/img/carrito.png">
+    </div>
+    </header>
+    <div class="contenidoPan">
+        <div class="articulo">
+            <h2>Baguette</h2>
+            <img src="./src/img/baguette.png" id="producto1" >
+            <p>La baguette, un clásico francés, es un pan largo y crujiente perfecto para bocadillos gourmet.</p>
+            <button id="agregarAlCarrito1">COMPRAR</button>
+            
+        </div>
+        <div class="articulo">
+            <h2>Pan de centeno</h2>
+            <img src="./src/img/panDeCenteno.png" id="producto2">
+            <p>El pan de centeno, con su sabor robusto, es ideal para sándwiches saludables.</p>
+            <button id="agregarAlCarrito2">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Brioche</h2>
+            <img src="./src/img/brioche.png" id="producto3">
+            <p> El brioche es un pan suave y dulce, ideal para postres y desayunos elegantes.</p>
+            <button id="agregarAlCarrito3">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Ciabatta (chapata)</h2>
+            <img src="./src/img/ciabatta.png" id="producto4">
+            <p>La ciabatta, con su corteza crujiente y miga alveolada, es perfecta para sándwiches mediterráneos.</p>
+            <button id="agregarAlCarrito4">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Pan integral</h2>
+            <img src="./src/img/panIntegral.png" id="producto5">
+            <p>El pan integral, nutritivo y saludable, es excelente para bocadillos y comidas equilibradas.</p>
+            <button id="agregarAlCarrito5">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Pan de pita</h2>
+            <img src="./src/img/panDePita.png" id="producto6">
+            <p>El pan de pita, versátil y suave, es imprescindible para platos mediterráneos y kebabs.</p>
+            <button id="agregarAlCarrito6">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Pan de Maíz</h2>
+            <img src="./src/img/panDeMaiz.png" id="producto7">
+            <p>El pan de maíz, con su sabor agridulce, es el complemento perfecto para barbacoas y guisos.</p>
+            <button id="agregarAlCarrito7">COMPRAR</button>
+        </div>
+        <div class="articulo">
+            <h2>Pan de Masa Madre:</h2>
+            <img src="./src/img/panMasaMadre.png" id="producto8">
+            <p>Su fermentación natural le confiere un sabor inigualable con toques ácidos y complejidad.</p>
+            <button id="agregarAlCarrito8">COMPRAR</button>
+        </div>
+    </div>
+    <footer>
+        <div class="media">
+            <div class="rrss"><a href="https://maps.app.goo.gl/RaXZa2hbHCWVUDe77" target="_blank"><img src="./src/img/ubi.png"></a></div>
+            <div class="rrss"><a href="https://www.instagram.com/panadario/?hl=es" target="_blank"><img src="./src/img/instaLogo.png"></a></div>
+        </div>
+        <p >
+            <button id="contactoDialog">CONTACTO</button>
+        </p>
+    </footer>
+    <dialog id="contacto">
+        <h2>CONTACTO</h2>
+            <!--- NOMBRE EMAIL Y TEXTAREA-->
+    <form>
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" placeholder="Nombre">
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Email">
+        <label for="message">¿En que podemos ayudarte?: </label>
+        <textarea name="message" placeholder="Mensaje"></textarea>
+        <button onclick="salir()">ENVIAR</button>
+        <button class="flechaBack" onclick="salir()">x</button>
+    </form>
+    </dialog>
+</body>
+</html>
