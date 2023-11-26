@@ -9,3 +9,5 @@ __PEQUEÑA EXPLICACIÓN__: Siempre que utilizo inteligencias artificiales tengo 
 3. Para la creación del fondo de la web he creado una imagen con __Leonardo.ai__ (ia enseñada por ti). El prompt utilizado ha sido: _"Creating an image for a website background. The background should feature numerous really small and tiny illustrations of bakery items, all in elegant black and gold color palettes."_ Dejo todos los fondos que he ido probando y cual es el que más me ha convencido.
 
 4. Para los nombres y descripciones de los panes __CharGPT__ con el prompt: _"Dame 8 descripciones de panes, con sus nombres y de diferentes tipos con una extension maxima de 4 lineas"_
+
+## Capturas de pantalla.
